@@ -1,24 +1,26 @@
 {
   "name": "protractorframework",
   "version": "1.0.0",
-  "description": "Aaron McKay's Protractor Framework",
+  "description": "committed Tester's Protractor Framework",
   "main": "conf.js",
   "dependencies": {
-    "eslint": "^4.5.0"
+    "eslint": "^4.5.0",
+    "protractor": "~5.1.2"
   },
   "devDependencies": {
-    "eslint-config-google": "^0.9.1"
+    "eslint-config-google": "^0.9.1",
+    "selenium-webdriver": "^3.5.0"
   },
   "scripts": {
     "test": "protractor conf.js"
   },
   "repository": {
     "type": "git",
-    "url": "tbd"
+    "url": "https://github.com/committedtester/protractor_framework"
   },
   "keywords": [
     "tbd"
   ],
-  "author": "Aaron McKay",
+  "author": "committed Tester",
   "license": "UNLICENSED"
 }

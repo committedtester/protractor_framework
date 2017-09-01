@@ -1,5 +1,13 @@
+FROM SCRATCH
+Install JDK
+Install node.js
+Install npm
+Configure Environment Variables to access protractor globally C:\Users\<USERNAME>\AppData\Roaming\npm
+npm install -g protractor
+
 webdriver-manager start
 if this fails, try webdriver-manager update
+Validate server status via http://localhost:4444/wd/hub/static/resource/hub.html
 
 C:\Program Files\Git\git-cmd.exe
 start-ssh-agent
