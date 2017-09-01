@@ -1,2 +1,6 @@
 webdriver-manager start
 if this fails, try webdriver-manager update
+
+C:\Program Files\Git\git-cmd.exe
+start-ssh-agent
+code 
