@@ -3,7 +3,7 @@
 
         "entryURL":"http://www.way2automation.com/angularjs-protractor/registeration",
         "validationURL":"http://www.way2automation.com/angularjs-protractor/registeration/#/login",
-        "loginURL":"http://www.way2automation.com/angularjs-protractor/registeration/#/",
+        "loggedInURL":"http://www.way2automation.com/angularjs-protractor/registeration/#/",
         "userNameText":"angular",
         "passwordText":"password"       
 

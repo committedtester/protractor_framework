@@ -10,6 +10,16 @@ describe('testing the loading of the way2.automation website', function() {
 		expect(browser.getCurrentUrl()).toEqual(testData.way2automation.validationURL);
 		});
 
+	it('should return to the login page once you logout', function() {
+		registrationLoginPage.enterUserName(testData.way2automation.userNameText);
+		registrationLoginPage.enterPassword(testData.way2automation.passwordText);
+		registrationLoginPage.enterUserName2ndField(testData.way2automation.userNameText);
+		registrationLoginPage.clickLoginButton();
+		// expect(browser.getCurrentUrl()).toBe(testData.way2automation.loginURL);
+		homePage.clickLogOutLink();
+		expect(browser.getCurrentUrl()).toBe(testData.way2automation.validationURL);
+	});
+
 	it('should login if you enter a correct user name and password', function() {
 		registrationLoginPage.enterUserName(testData.way2automation.userNameText);
 		registrationLoginPage.enterPassword(testData.way2automation.passwordText);
@@ -17,7 +27,7 @@ describe('testing the loading of the way2.automation website', function() {
 		registrationLoginPage.clickLoginButton();
 		// protractorHelperFunctions.browserWaitForURL(testData.way2automation.loginURL, 5000);
 		// browser.waitForAngular();
-		expect(browser.getCurrentUrl()).toBe(testData.way2automation.loginURL);
+		expect(browser.getCurrentUrl()).toBe(testData.way2automation.loggedInURL);
 		// homePage.validateLoggedInLabel('You\'re logged in!!');
 		protractorHelperFunctions.validateElementText(homePage.loggedInLabel, 'You\'re logged in!!');
 	});

@@ -2,12 +2,11 @@ var OR = require('../json/objectRepository.json');
 
 var HomePage = function() {
         this.loggedInLabel =element(by.css(OR.home.loggedInLabel));
+        this.logOutLink = element(by.css(OR.home.logOutLink));
 
-this.validateLoggedInLabel = function(expectedText) {
-        this.loggedInLabel.getText().then(function(text) {
-        console.log(text);
-        expect(text).toBe(expectedText);
-        });
-};
-};
+        this.clickLogOutLink = function() {
+                this.logOutLink.click();
+        };
+        };
+
 module.exports = new HomePage();
