@@ -17,7 +17,16 @@
 * Eclipse has some good protractor extensions
 * I've personally gone to vs code
 
-# For Github
+# To Execute
+* Go to the deployment directory, subfolder conf
+* protractor conf.js
+
+# For local Github and vs code using the public key
+* C:\Program Files\Git\git-cmd.exe
+* start-ssh-agent
+* code 
+
+# For local Github and vs code using the public key
 * C:\Program Files\Git\git-cmd.exe
 * start-ssh-agent
 * code 
