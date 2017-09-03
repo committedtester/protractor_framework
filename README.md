@@ -7,7 +7,7 @@
 * Install node.js
 * Install npm
 * Configure Environment Variables to access protractor globally C:\Users\<USERNAME>\AppData\Roaming\npm
-* npm install -g protractor
+* npm install (based on the package.json)
 
 * webdriver-manager start
 * if this fails, try webdriver-manager update
@@ -20,13 +20,3 @@
 # To Execute
 * Go to the deployment directory, subfolder conf
 * protractor conf.js
-
-# For local Github and vs code using the public key
-* C:\Program Files\Git\git-cmd.exe
-* start-ssh-agent
-* code 
-
-# For local Github and vs code using the public key
-* C:\Program Files\Git\git-cmd.exe
-* start-ssh-agent
-* code 
